@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="NeoTexture">
+            <file name="com-jme3-gde-neotexture-OpenNeoTexture.instance">
+                <attr name="delegate" methodvalue="org.openide.awt.Actions.inject"/>
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#CTL_OpenNeoTexture"/>
+                <attr name="iconBase" stringvalue="com/jme3/gde/neotexture/NeoTextureEdit.png"/>
+                <attr name="injectable" stringvalue="com.jme3.gde.neotexture.OpenNeoTexture"/>
+                <attr name="instanceCreate" methodvalue="org.openide.awt.Actions.context"/>
+                <attr name="noIconInMenu" boolvalue="false"/>
+                <attr name="selectionType" stringvalue="EXACTLY_ONE"/>
+                <attr name="type" stringvalue="org.openide.loaders.DataObject"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="com-jme3-gde-neotexture-NeoTextureEditorAction.instance">
+                <attr name="component" methodvalue="com.jme3.gde.neotexture.NeoTextureEditorTopComponent.findInstance"/>
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#CTL_NeoTextureEditorAction"/>
+                <attr name="iconBase" stringvalue="com/jme3/gde/neotexture/NeoTextureEdit.png"/>
+                <attr name="instanceCreate" methodvalue="org.openide.windows.TopComponent.openAction"/>
+            </file>
+            <file name="com-jme3-gde-neotexture-NeoTexturePropertiesAction.instance">
+                <attr name="component" methodvalue="com.jme3.gde.neotexture.NeoTexturePropertiesTopComponent.findInstance"/>
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#CTL_NeoTexturePropertiesAction"/>
+                <attr name="iconBase" stringvalue="com/jme3/gde/neotexture/NeoTextureEdit-Icon.png"/>
+                <attr name="instanceCreate" methodvalue="org.openide.windows.TopComponent.openAction"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Loaders">
+        <folder name="text">
+            <folder name="x-neotexturegraph">
+                <folder name="Actions">
+                    <file name="com-jme3-gde-neotexture-OpenNeoTexture.shadow">
+                        <attr name="originalFile" stringvalue="Actions/NeoTexture/com-jme3-gde-neotexture-OpenNeoTexture.instance"/>
+                        <attr name="position" intvalue="0"/>
+                    </file>
+                    <file name="org-openide-actions-CopyAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-CopyAction.instance"/>
+                        <attr name="position" intvalue="400"/>
+                    </file>
+                    <file name="org-openide-actions-CutAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-CutAction.instance"/>
+                        <attr name="position" intvalue="300"/>
+                    </file>
+                    <file name="org-openide-actions-DeleteAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-DeleteAction.instance"/>
+                        <attr name="position" intvalue="600"/>
+                    </file>
+                    <file name="org-openide-actions-FileSystemAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-FileSystemAction.instance"/>
+                        <attr name="position" intvalue="1100"/>
+                    </file>
+                    <!--file name="org-openide-actions-OpenAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-OpenAction.instance"/>
+                        <attr name="position" intvalue="100"/>
+                    </file-->
+                    <file name="org-openide-actions-PropertiesAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-PropertiesAction.instance"/>
+                        <attr name="position" intvalue="1400"/>
+                    </file>
+                    <file name="org-openide-actions-RenameAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-RenameAction.instance"/>
+                        <attr name="position" intvalue="700"/>
+                    </file>
+                    <file name="org-openide-actions-SaveAsTemplateAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-SaveAsTemplateAction.instance"/>
+                        <attr name="position" intvalue="900"/>
+                    </file>
+                    <file name="org-openide-actions-ToolsAction.shadow">
+                        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-ToolsAction.instance"/>
+                        <attr name="position" intvalue="1300"/>
+                    </file>
+                    <file name="sep-1.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="200"/>
+                    </file>
+                    <file name="sep-2.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="500"/>
+                    </file>
+                    <file name="sep-3.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="800"/>
+                    </file>
+                    <file name="sep-4.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="1000"/>
+                    </file>
+                    <file name="sep-5.instance">
+                        <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                        <attr name="position" intvalue="1200"/>
+                    </file>
+                </folder>
+                <folder name="Factories">
+                    <file name="NeoTextureGraphDataLoader.instance">
+                        <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/com/jme3/gde/neotexture/NeoTextureEdit.png"/>
+                        <attr name="dataObjectClass" stringvalue="com.jme3.gde.neotexture.NeoTextureGraphDataObject"/>
+                        <attr name="instanceCreate" methodvalue="org.openide.loaders.DataLoaderPool.factory"/>
+                        <attr name="mimeType" stringvalue="text/x-neotexturegraph"/>
+                    </file>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Window">
+        </folder>
+    </folder>
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="neotexture-helpset.xml" url="neotexture-helpset.xml">
+                <attr name="position" intvalue="3449"/>
+            </file>
+        </folder>
+        <folder name="MIMEResolver">
+            <file name="NeoTextureGraphResolver.xml" url="NeoTextureGraphResolver.xml">
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#Services/MIMEResolver/NeoTextureGraphResolver.xml"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Templates">
+        <folder name="NeoTexture">
+            <file name="NeoTextureGraphTemplate.tgr" url="NeoTextureGraphTemplate.tgr">
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#Templates/Other/NeoTextureGraphTemplate.tgr"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="NeoTextureEditorTopComponent.settings" url="NeoTextureEditorTopComponentSettings.xml"/>
+            <file name="NeoTexturePropertiesTopComponent.settings" url="NeoTexturePropertiesTopComponentSettings.xml"/>
+        </folder>
+        <folder name="Modes">
+            <folder name="editor">
+                <file name="NeoTextureEditorTopComponent.wstcref" url="NeoTextureEditorTopComponentWstcref.xml"/>
+            </folder>
+            <folder name="properties">
+                <file name="NeoTexturePropertiesTopComponent.wstcref" url="NeoTexturePropertiesTopComponentWstcref.xml"/>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>
