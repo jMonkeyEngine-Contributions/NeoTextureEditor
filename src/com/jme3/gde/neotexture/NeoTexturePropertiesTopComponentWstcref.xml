@@ -8,4 +8,5 @@ and open the template in the editor.
     <module name="com.jme3.gde.neotexture" spec="0.9.5"/>
     <tc-id id="NeoTexturePropertiesTopComponent"/>
     <state opened="false"/>
+    <previousmode name="properties" index="10"></previousmode>
 </tc-ref>

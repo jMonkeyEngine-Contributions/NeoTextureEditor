@@ -8,8 +8,6 @@ import com.jme3.gde.core.assets.AssetDataObject;
 import com.jme3.gde.core.assets.ProjectAssetManager;
 import com.mystictri.neotextureedit.TextureEditor;
 import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.io.IOException;
 import java.util.logging.Logger;
 import org.openide.util.NbBundle;
@@ -49,14 +47,15 @@ public final class NeoTextureEditorTopComponent extends TopComponent {
 //        textureEditor.getTextureGraphEditorPanel().addPropertyChangeListener(this);
     }
 
-    public void loadNeoGraph(DataObject object){
+    public void loadNeoGraph(DataObject object) {
         if (object == null) {
             textureEditor.setCurrentFileName(null);
             return;
         }
-        ProjectAssetManager manager=object.getLookup().lookup(ProjectAssetManager.class);
+        setName(object.getName());
+        ProjectAssetManager manager = object.getLookup().lookup(ProjectAssetManager.class);
         this.object = object;
-        String fileName=object.getPrimaryFile().getPath();
+        String fileName = object.getPrimaryFile().getPath();
         textureEditor.setCurrentFileName(fileName);
         textureEditor.getTextureGraphEditorPanel().load(fileName, true);
         setActivatedNodes(new Node[]{object.getNodeDelegate()});
@@ -136,7 +135,6 @@ public final class NeoTextureEditorTopComponent extends TopComponent {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         textureEditor.actionPerformed(new ActionEvent(this, 0, "file_save"));
     }//GEN-LAST:event_jButton2ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel graphPanel;
     private javax.swing.JButton jButton2;
@@ -160,7 +158,6 @@ public final class NeoTextureEditorTopComponent extends TopComponent {
 //    public void propertyChange(PropertyChangeEvent evt) {
 //        object.setModified(true);
 //    }
-
     /**
      * Obtain the NeoTextureEditorTopComponent instance. Never call {@link #getDefault} directly!
      */
