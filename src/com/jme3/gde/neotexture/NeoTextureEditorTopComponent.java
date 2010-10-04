@@ -5,6 +5,7 @@
 package com.jme3.gde.neotexture;
 
 import com.jme3.gde.core.assets.AssetDataObject;
+import com.jme3.gde.core.assets.ProjectAssetManager;
 import com.mystictri.neotextureedit.TextureEditor;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
@@ -40,7 +41,7 @@ public final class NeoTextureEditorTopComponent extends TopComponent {
         setName(NbBundle.getMessage(NeoTextureEditorTopComponent.class, "CTL_NeoTextureEditorTopComponent"));
         setToolTipText(NbBundle.getMessage(NeoTextureEditorTopComponent.class, "HINT_NeoTextureEditorTopComponent"));
         setIcon(ImageUtilities.loadImage(ICON_PATH, true));
-        textureEditor = new TextureEditor(new String[]{"--disableGL"});
+        textureEditor = new TextureEditor(new String[]{"--disableGL", "-p", System.getProperty("netbeans.projects.dir")});
         textureEditor.initialize();
         selectionPanel.add(textureEditor.getPatternSelectorPanel());
         graphPanel.add(textureEditor.getTextureGraphEditorPanel());
@@ -53,6 +54,7 @@ public final class NeoTextureEditorTopComponent extends TopComponent {
             textureEditor.setCurrentFileName(null);
             return;
         }
+        ProjectAssetManager manager=object.getLookup().lookup(ProjectAssetManager.class);
         this.object = object;
         String fileName=object.getPrimaryFile().getPath();
         textureEditor.setCurrentFileName(fileName);
@@ -195,7 +197,7 @@ public final class NeoTextureEditorTopComponent extends TopComponent {
         if (object != null) {
             object.setModified(false);
         }
-        TextureEditor.INSTANCE = null;
+//        TextureEditor.INSTANCE = null;
     }
 
     void writeProperties(java.util.Properties p) {
