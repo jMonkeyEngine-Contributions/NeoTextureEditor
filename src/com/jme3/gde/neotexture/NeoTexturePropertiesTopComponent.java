@@ -107,6 +107,7 @@ public final class NeoTexturePropertiesTopComponent extends TopComponent {
 
     @Override
     public void componentOpened() {
+
         // TODO add custom code on component opening
     }
 

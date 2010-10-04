@@ -45,7 +45,7 @@ public final class NeoTextureEditorTopComponent extends TopComponent {
         textureEditor.initialize();
         selectionPanel.add(textureEditor.getPatternSelectorPanel());
         graphPanel.add(textureEditor.getTextureGraphEditorPanel());
-        NeoTexturePropertiesTopComponent.getDefault().addNeoPanel(textureEditor.getTextureGraphEditorPanel().getParameterEditorPanel());
+        NeoTexturePropertiesTopComponent.findInstance().addNeoPanel(textureEditor.getTextureGraphEditorPanel().getParameterEditorPanel());
 //        textureEditor.getTextureGraphEditorPanel().addPropertyChangeListener(this);
     }
 
@@ -187,13 +187,13 @@ public final class NeoTextureEditorTopComponent extends TopComponent {
 
     @Override
     public void componentOpened() {
-        NeoTexturePropertiesTopComponent.getDefault().open();
-        NeoTexturePropertiesTopComponent.getDefault().requestActive();
+        NeoTexturePropertiesTopComponent.findInstance().open();
+        NeoTexturePropertiesTopComponent.findInstance().requestActive();
     }
 
     @Override
     public void componentClosed() {
-        NeoTexturePropertiesTopComponent.getDefault().close();
+        NeoTexturePropertiesTopComponent.findInstance().close();
         if (object != null) {
             object.setModified(false);
         }

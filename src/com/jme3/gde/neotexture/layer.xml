@@ -24,7 +24,7 @@
             <file name="com-jme3-gde-neotexture-NeoTexturePropertiesAction.instance">
                 <attr name="component" methodvalue="com.jme3.gde.neotexture.NeoTexturePropertiesTopComponent.findInstance"/>
                 <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#CTL_NeoTexturePropertiesAction"/>
-                <attr name="iconBase" stringvalue="com/jme3/gde/neotexture/NeoTextureEdit-Icon.png"/>
+                <attr name="iconBase" stringvalue="com/jme3/gde/neotexture/NeoTextureEdit.png"/>
                 <attr name="instanceCreate" methodvalue="org.openide.windows.TopComponent.openAction"/>
             </file>
         </folder>

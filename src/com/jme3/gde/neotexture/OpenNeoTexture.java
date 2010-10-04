@@ -18,7 +18,7 @@ public final class OpenNeoTexture implements ActionListener {
 
     public void actionPerformed(ActionEvent ev) {
         // TODO use context
-        NeoTextureEditorTopComponent texEd= NeoTextureEditorTopComponent.getDefault();
+        NeoTextureEditorTopComponent texEd= NeoTextureEditorTopComponent.findInstance();
         texEd.loadNeoGraph(context);
         texEd.open();
         texEd.requestActive();
