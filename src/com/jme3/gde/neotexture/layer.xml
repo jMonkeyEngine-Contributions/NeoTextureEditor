@@ -148,4 +148,14 @@
             <file name="NeoTexture-Libraries.xml" url="NeoTexture-Libraries.xml"/>
         </folder>
     </folder>
+    <folder name="JavaPalette">
+        <folder name="NeoTexture">
+            <file name="AddLoader.xml" url="nbresloc:/com/jme3/gde/neotexture/palette/AddLoader.xml">
+                <attr name="position" intvalue="100"/>
+            </file>
+            <file name="LoadMaterial.xml" url="nbresloc:/com/jme3/gde/neotexture/palette/LoadMaterial.xml">
+                <attr name="position" intvalue="150"/>
+            </file>
+        </folder>
+    </folder>
 </filesystem>
