@@ -46,7 +46,7 @@ public class LoadMaterial implements ActiveEditorDrop {
 
     private String createBody() {
         String body = "NeoTextureMaterialKey neoKey = new NeoTextureMaterialKey(\"Materials/neoMaterial.tgr\");\n"
-                + "neoKey.setMaterialDef(\"Common/MatDefs/Misc/SimpleTextured.j3md\");"
+                + "neoKey.setMaterialDef(\"Common/MatDefs/Misc/SimpleTextured.j3md\");\n"
                 + "Material material = assetManager.loadAsset(key);";
         return body;
     }
