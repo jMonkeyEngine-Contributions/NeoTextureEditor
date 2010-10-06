@@ -7,5 +7,6 @@ and open the template in the editor.
 <toc version="2.0">
     <tocitem text="NeoTextureEditor">
         <tocitem text="About NeoTextureEditor" target="com.jme3.gde.neotexture.about"/>
+        <tocitem text="Using NeoTextureEditor (online)" target="com.jme3.gde.neotexture.usage"/>
     </tocitem>
 </toc>

@@ -6,4 +6,5 @@ and open the template in the editor.
 <!DOCTYPE map PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 2.0//EN" "http://java.sun.com/products/javahelp/map_2_0.dtd">
 <map version="2.0">
     <mapID target="com.jme3.gde.neotexture.about" url="neotexture-about.html"/>
+    <mapID target="com.jme3.gde.neotexture.usage" url="http://jmonkeyengine.org/wiki/doku.php/jme3:jmonkeyplatform:neotexture?do=export_xhtmlbody"/>
 </map>
