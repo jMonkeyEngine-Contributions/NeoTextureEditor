@@ -127,6 +127,34 @@
                 <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#Templates/Other/NeoTextureGraphTemplate.tgr"/>
                 <attr name="template" boolvalue="true"/>
             </file>
+            <file name="example_Brain.tgr" url="example_Brain.tgr">
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#Templates/Other/example_Brain.tgr"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
+            <file name="example_Bricks.tgr" url="example_Bricks.tgr">
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#Templates/Other/example_Bricks.tgr"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
+            <file name="example_CobbleStone.tgr" url="example_CobbleStone.tgr">
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#Templates/Other/example_CobbleStone.tgr"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
+            <file name="example_CorodedSpaceShip.tgr" url="example_CorodedSpaceShip.tgr">
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#Templates/Other/example_CorodedSpaceShip.tgr"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
+            <file name="example_Lava.tgr" url="example_Lava.tgr">
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#Templates/Other/example_Lava.tgr"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
+            <file name="example_RustyMetal.tgr" url="example_RustyMetal.tgr">
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#Templates/Other/example_RustyMetal.tgr"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
+            <file name="example_Wood.tgr" url="example_Wood.tgr">
+                <attr name="displayName" bundlevalue="com.jme3.gde.neotexture.Bundle#Templates/Other/example_Wood.tgr"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
         </folder>
     </folder>
     <folder name="Windows2">
