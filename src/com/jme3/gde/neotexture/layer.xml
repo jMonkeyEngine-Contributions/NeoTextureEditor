@@ -143,4 +143,9 @@
             </folder>
         </folder>
     </folder>
+    <folder name="org-netbeans-api-project-libraries">
+        <folder name="Libraries">
+            <file name="NeoTexture-Libraries.xml" url="NeoTexture-Libraries.xml"/>
+        </folder>
+    </folder>
 </filesystem>
