@@ -39,15 +39,17 @@ import org.openide.text.ActiveEditorDrop;
  *
  * @author normenhansen
  */
-public class AddLoader implements ActiveEditorDrop {
+public class AddTextureLoader implements ActiveEditorDrop {
 
-    public AddLoader() {
+    public AddTextureLoader() {
     }
 
     private String createBody() {
-        String body = "//For loading tgr files as materials, see palette example 'Load Material'.\n"
-                + "//Cannot be used together with tgr texture loader in one AssetManager!\n"
-                + "assetManager.registerLoader(\"com.jme3.material.plugins.NeoTextureMaterialLoader\",\"tgr\");";
+        String body = "//For loading tgr files as textures in j3m files.\n"
+                + "//Use syntax 'Material/neoMaterial?m_NormalMap.tgr' in j3m files.\n"
+                + "//Cannot be used together with tgr material loader in one AssetManager!\n"
+                + "assetManager.registerLocator(\"/\",\"com.jme3.texture.plugins.NeoTextureLocator\");\n"
+                + "assetManager.registerLoader(\"com.jme3.material.plugins.NeoTextureLoader\",\"tgr\");";
         return body;
     }
 

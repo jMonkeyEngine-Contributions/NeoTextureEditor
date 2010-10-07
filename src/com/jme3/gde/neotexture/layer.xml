@@ -178,6 +178,9 @@
     </folder>
     <folder name="JavaPalette">
         <folder name="NeoTexture">
+            <file name="AddTextureLoader.xml" url="nbresloc:/com/jme3/gde/neotexture/palette/AddTextureLoader.xml">
+                <attr name="position" intvalue="90"/>
+            </file>
             <file name="AddLoader.xml" url="nbresloc:/com/jme3/gde/neotexture/palette/AddLoader.xml">
                 <attr name="position" intvalue="100"/>
             </file>
