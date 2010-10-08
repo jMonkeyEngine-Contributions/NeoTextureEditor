@@ -98,10 +98,23 @@
                     </run-dependency>
                 </dependency>
             </module-dependencies>
-            <public-packages/>
+            <public-packages>
+                <package>com.jme3.material.plugins</package>
+                <package>com.jme3.texture.plugins</package>
+                <package>com.mystictri.neotexture</package>
+                <package>com.mystictri.neotextureedit</package>
+                <package>engine.base</package>
+                <package>engine.base.datastructure</package>
+                <package>engine.graphics.synthesis.texture</package>
+                <package>engine.parameters</package>
+            </public-packages>
             <class-path-extension>
                 <runtime-relative-path>ext/NeoTextureEdit.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/NeoTextureEdit.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/NeoTexturePlugin.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/NeoTexturePlugin.jar</binary-origin>
             </class-path-extension>
         </data>
     </configuration>
