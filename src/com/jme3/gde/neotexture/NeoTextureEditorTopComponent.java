@@ -18,6 +18,7 @@ import org.netbeans.api.settings.ConvertAsProperties;
 import org.openide.cookies.SaveCookie;
 import org.openide.loaders.DataObject;
 import org.openide.nodes.Node;
+import org.openide.util.HelpCtx;
 
 /**
  * Top component which displays something.
@@ -32,6 +33,7 @@ public final class NeoTextureEditorTopComponent extends TopComponent {
     private static final String PREFERRED_ID = "NeoTextureEditorTopComponent";
     DataObject object;
     TextureEditor textureEditor;
+    private HelpCtx ctx = new HelpCtx("com.jme3.gde.neotexture.usage");
 //    NeoTexturePropertiesTopComponent propertiesComponent;
 
     public NeoTextureEditorTopComponent() {
@@ -220,6 +222,11 @@ public final class NeoTextureEditorTopComponent extends TopComponent {
     @Override
     protected String preferredID() {
         return PREFERRED_ID;
+    }
+
+    @Override
+    public HelpCtx getHelpCtx() {
+        return ctx;
     }
 
     public class SaveCookieImpl implements SaveCookie {

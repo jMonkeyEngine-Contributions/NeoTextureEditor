@@ -11,6 +11,7 @@ import org.openide.windows.TopComponent;
 import org.openide.windows.WindowManager;
 import org.openide.util.ImageUtilities;
 import org.netbeans.api.settings.ConvertAsProperties;
+import org.openide.util.HelpCtx;
 
 /**
  * Top component which displays something.
@@ -23,6 +24,7 @@ public final class NeoTexturePropertiesTopComponent extends TopComponent {
     /** path to the icon used by the component and its open action */
     static final String ICON_PATH = "com/jme3/gde/neotexture/NeoTextureEdit-Icon.png";
     private static final String PREFERRED_ID = "NeoTexturePropertiesTopComponent";
+    private HelpCtx ctx = new HelpCtx("com.jme3.gde.neotexture.usage");
 
     public NeoTexturePropertiesTopComponent() {
         initComponents();
@@ -140,4 +142,10 @@ public final class NeoTexturePropertiesTopComponent extends TopComponent {
     protected String preferredID() {
         return PREFERRED_ID;
     }
+
+    @Override
+    public HelpCtx getHelpCtx() {
+        return ctx;
+    }
+
 }
