@@ -7,6 +7,8 @@ package com.jme3.gde.neotexture;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.gde.core.assets.AssetManagerConfigurator;
+import com.jme3.texture.plugins.NeoTextureLoader;
+import com.jme3.texture.plugins.NeoTextureLocator;
 
 /**
  *
@@ -16,8 +18,8 @@ import com.jme3.gde.core.assets.AssetManagerConfigurator;
 public class NeoTextureAssetManagerConfigurator implements AssetManagerConfigurator{
 
     public void prepareManager(AssetManager manager) {
-        manager.registerLocator("/", "com.jme3.texture.plugins.NeoTextureLocator");
-        manager.registerLoader("com.jme3.texture.plugins.NeoTextureLoader","tgr");
+        manager.registerLocator("/", NeoTextureLocator.class);
+        manager.registerLoader(NeoTextureLoader.class,"tgr");
     }
 
 }
