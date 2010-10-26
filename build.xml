@@ -5,4 +5,11 @@
 <project name="com.jme3.gde.neotexture" default="netbeans" basedir=".">
     <description>Builds, tests, and runs the project com.jme3.gde.neotexture.</description>
     <import file="nbproject/build-impl.xml"/>
+
+    <target name="copy-nifty">
+        <copy file="/Users/normenhansen/Documents/Code-Import/JME/neotexture/neotextureedit/neotexture.jar"
+        todir="release/libs/" overwrite="true"/>
+        <copy file="/Users/normenhansen/Documents/Code-Import/JME/neotexture/neotextureedit/NeoTextureEdit.jar"
+        todir="release/modules/ext/" overwrite="true"/>
+    </target>
 </project>
